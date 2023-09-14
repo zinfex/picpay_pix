@@ -1,0 +1,6 @@
+APLICATIVO PIC PAY PIX
+
+    -  Fazer sistema de saldo com local storage
+    -  Fazer sistema de deposito
+    -  Criar sistema de pix transações
+    -  Fazer Chat aovivo
