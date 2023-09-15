@@ -14,15 +14,15 @@ function Amount() {
       </div>
       <div id="options">
         <Link to="/pix" className="option" id="pix">
-          <img src="./src/imgs/pix.svg" /> <span>Pix</span>
+          <img src="..src/imgs/pix.svg" /> <span>Pix</span>
         </Link>
 
         <Link to="/depositar" className="option" id="deposito">
-          <img src="./src/imgs/deposit.svg" /> <span>Depositar</span>
+          <img src="..src/imgs/deposit.svg" /> <span>Depositar</span>
         </Link>
 
         <Link to="/transacoes" className="option" id="transacoes">
-          <img src="./src/imgs/transacoes.svg" /> <span>Transações</span>
+          <img src="..src/imgs/transacoes.svg" /> <span>Transações</span>
         </Link>
       </div>
     </div>
