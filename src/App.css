@@ -1,17 +1,49 @@
 body {
   background-color: #21905c;
-  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 90vh;
+  color: white;
+  width: 100%;
+  margin: 0;
 }
 
-#amount {
-  color: white;
-
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
 #options {
   display: flex;
+  justify-content: center;
 }
 
+
+/*CHAT*/
+#btnChat {
+  filter: invert();
+}
+
+#btnChat img {
+  width: 40px;
+  margin-left: 40px;
+}
+
+#chatPainel {
+  position: fixed;
+  background-color: #2C6048;
+  width: 20%;
+  margin-top: 30px;
+  
+  height: 70vh;
+  right: 10px;
+  top: 80px;
+  padding: 40px;
+}
+
+/*OPÇÕES*/
 .option {
   display: flex;
   flex-direction: column;
@@ -24,22 +56,58 @@ body {
   cursor: pointer;
   border-radius: 15px;
   transition: 300ms ease-in-out;
-  color: white;
+  text-decoration: none;
+  transform: scale(1.2);
+}
 
+.option span {
+  margin-top: 10px;
+  width: 100%;
+  margin-left: -20px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.option img {
+  margin-top: -15px;
+  width: 30px;
+  filter: invert();
+  margin-left: -15px;
+}
+
+#deposito span {
+  margin-right: 30px;
 }
 
 .option:hover {
-  background-color: #2a5f46;
-  border-radius: 15px 0px 15px 0px;
+  background-color: #2d6048;
+}
+
+.painel {
+  display: flex;
+  flex-direction: column;
+  background-color: #1F5D40;
+  padding: 30px;
+  margin-top: 30px;
+  width: fit-content;
+  border-radius: 15px;
+  margin-left: 30px;
+}
+
+.painel input {
+  font-size: 20px;
 }
 
 #high {
+  display: flex;
   box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.169);
-  margin-top: -30px;
-  margin-inline: -30px;
 
   padding: 20px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
 }
 
-
-
+#high img {
+  filter: brightness(100);
+}

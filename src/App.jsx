@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import './App.css'
 import Amount from './layouts/amount';
 import Deposit from './painels/deposit';
-
+import Pix from './painels/pix';
+import Chat from './painels/chat';
+import Transfers from './painels/transfers';
 
 function App() {
 
@@ -14,7 +16,9 @@ function App() {
 
       <Routes>
         <Route path='/depositar' element={<Deposit />}/>
-        <Route  />
+        <Route path='/pix' element={<Pix />}/>
+        <Route path='/transacoes' element={<Transfers />}/>
+        <Route path='/chat' element={<Chat />}/>
       </Routes>
     </Router>
   )
