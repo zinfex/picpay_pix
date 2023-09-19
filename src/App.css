@@ -68,10 +68,10 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.option img {
+.icone {
   margin-top: -15px;
   width: 30px;
-  filter: invert();
+  color: white;
   margin-left: -15px;
 }
 
@@ -108,6 +108,6 @@ body {
   width: 100%;
 }
 
-#high img {
-  filter: brightness(100);
+.chaticon {
+  color: rgb(7, 7, 7);
 }

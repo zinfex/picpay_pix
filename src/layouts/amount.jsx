@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import High from "./high";
 
+import { FaPix } from 'react-icons/fa6';
+import { BsCashCoin } from 'react-icons/bs';
+import { GrTransaction } from 'react-icons/gr';
+
 function Amount() {
   const [saldo, setSaldo] = useState(0);
 
@@ -18,15 +22,15 @@ function Amount() {
 
       <div id="options">
         <Link to="/pix" className="option" id="pix">
-          <img src="../src/imgs/pix.svg" /> <span>Pix</span>
+          <FaPix size={30} className="icone" /> <span>Pix</span>
         </Link>
 
         <Link to="/depositar" className="option" id="deposito">
-          <img src="../src/imgs/deposit.svg" /> <span>Depositar</span>
+          <BsCashCoin size={30} className="icone"/> <span>Depositar</span>
         </Link>
 
         <Link to="/transacoes" className="option" id="transacoes">
-          <img src="../src/imgs/transacoes.svg" /> <span>Transações</span>
+          <GrTransaction size={30} className="icone" style={{ filter: 'invert()' }}/> <span>Transações</span>
         </Link>
       </div>
 
